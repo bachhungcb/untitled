@@ -1,4 +1,6 @@
+I2C_LCD1602.LcdInit(39)
+I2C_LCD1602.on()
+I2C_LCD1602.BacklightOn()
 basic.forever(function () {
-    led.plot(4, 2)
-    basic.clearScreen()
+    I2C_LCD1602.ShowString("Hello", 6, 0)
 })
